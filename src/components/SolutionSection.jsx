@@ -5,7 +5,7 @@ import FloatingElement from "./ui/FloatingElement"
 
 function SolutionSection() {
   const solutionFeatures = [
-    "Unified communication platform with video conferencing and virtual meetings",
+    "Unified communication platform with video conferencing.",
     "Approval flow and process management",
     "Finance and payroll automation",
     "HR management and employee engagement",

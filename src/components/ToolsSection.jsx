@@ -1,4 +1,4 @@
-import { Calendar, Users, Shield, Globe, MessageSquare, BarChart, Check, ArrowRight } from "lucide-react"
+import { Calendar, Users, Shield, Globe, MessageSquare, BarChart, Check } from "lucide-react"
 import RevealOnScroll from "./ui/RevealOnScroll"
 import GradientText from "./ui/GradientText"
 import FloatingElement from "./ui/FloatingElement"

@@ -1,4 +1,4 @@
-import { Smartphone, Globe, Lock, Zap } from "lucide-react"
+import { Smartphone, Globe, Lock, Monitor } from "lucide-react";
 import RevealOnScroll from "./ui/RevealOnScroll"
 import GradientText from "./ui/GradientText"
 import GlassCard from "./ui/GlassCard"
@@ -30,7 +30,15 @@ function SolutionAvailabilitySection() {
       gradient: "from-waikawa-grey to-vivid-cerise",
       delay: 200,
     },
-    
+    {
+      icon: Monitor,
+      title: "Desktop Application",
+      description: "Optimized experience for Windows and macOS",
+      color: "bg-vivid-cerise",
+      gradient: "from-vivid-cerise to-blue-hosta",
+      delay: 300,
+    },
+
   ]
 
   return (
@@ -88,15 +96,13 @@ function SolutionAvailabilitySection() {
 
           <RevealOnScroll animation="fade-up" delay={300} className="max-w-3xl mx-auto">
             <p className="text-lg text-slate-600">
-              Our solution has been crafted with the vision of easy access to everyone who has access to the internet
-              and it is based on technology which enables secure, peer to peer communication without the need for
-              intermediaries.
+              Our solution is designed to be easily accessible to anyone with an internet connection. It leverages technology that enables secure, peer-to-peer communication eliminating the need for intermediaries.
             </p>
           </RevealOnScroll>
         </div>
 
         <div className="relative p-5">
-          
+
           <div
             className="absolute inset-0 opacity-5"
             style={{
@@ -104,14 +110,16 @@ function SolutionAvailabilitySection() {
             }}
           ></div>
 
-          <div className="flex flex-row flex-wrap items-center justify-around  gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+
             {platforms.map((platform, index) => {
               const Icon = platform.icon
               return (
                 <RevealOnScroll key={index} animation="zoom-in" delay={400 + platform.delay} className="h-full">
-                  <GlassCard className="h-full group p-1">
+                  <GlassCard className="h-full w-[300px] flex-shrink-0">
+
                     <div className="bg-white rounded-xl p-4 h-full flex flex-col items-start  text-center relative overflow-hidden group-hover:bg-slate-50 transition-colors duration-300">
-                     
+
                       <div
                         className={`absolute inset-0 bg-gradient-to-br ${platform.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
                       ></div>
@@ -143,7 +151,7 @@ function SolutionAvailabilitySection() {
             <p className="text-lg text-slate-600 mb-4">
               <strong>Workwise</strong> is easy to access via web browser or any mobile platform i.e. iOS and android.
             </p>
-          
+
           </RevealOnScroll>
         </div>
       </div>

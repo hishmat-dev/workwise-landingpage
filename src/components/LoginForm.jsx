@@ -3,14 +3,12 @@ import { Eye, EyeOff, User, Lock, LogIn } from "lucide-react"
 import IconSlider from "./IconSlider"
 import { Link } from 'react-router-dom';
 
-import { useNavigate } from 'react-router-dom';
-
 function LoginForm() {
   const [showPassword, setShowPassword] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-  const navigate = useNavigate();
+ 
 
 
   const togglePasswordVisibility = () => {
@@ -24,61 +22,9 @@ function LoginForm() {
     console.log("Login with:", email, password)
   }
 
-
-  const modules = [
-    {
-      name: "Project/Task Management",
-      icon: "https://workw.com/static/media/News%20Feed.39a4e27ce8d085fd12239c9105e2d300.svg",
-    },
-    {
-      name: "HR Management",
-      icon: "https://workw.com/static/media/Schedules.201f16a1c7e5e002f028d81ca96386c2.svg",
-    },
-    {
-      name: "Messenger",
-      icon: "https://workw.com/static/media/Messenger.63d53f09d8938f3393b6736e906c183a.svg",
-    },
-    {
-      name: "Travel",
-      icon: "https://workw.com/static/media/Travel.07e4191311ead4b827dfa30bca97f853.svg",
-    },
-    {
-      name: "Communication Center",
-      icon: "https://workw.com/static/media/folder.284b44d67616ac0cf9af2431e9d72193.svg",
-    },
-    {
-      name: "Finance",
-      icon: "https://workw.com/static/media/Projects.61cb6e89238005785f31f20dda3c29bb.svg",
-    },
-    {
-      name: "Expenses",
-      icon: "https://workw.com/static/media/Expenses.bd31b743524bd6ab5aaa3a6aa5117786.svg",
-    },
-    {
-      name: "Tasks",
-      icon: "https://workw.com/static/media/Tasks.587227158fc83719bd4b3741dcbd51c2.svg",
-    },
-    {
-      name: "Voucher",
-      icon: "https://workw.com/static/media/voucher.d2e0583e43775bea39086d76fc9373c9.svg",
-    },
-    {
-      name: "Appraisals",
-      icon: "https://workw.com/static/media/Appraisals.5f733237e87beab2e1e11eab39ec356d.svg",
-    },
-    {
-      name: "Rewards",
-      icon: "https://workw.com/static/media/rewardIcon.1872d27791f08290da2b85977f16cf07.svg",
-    },
-    {
-      name: "Chart of Accounts",
-      icon: "https://workw.com/static/media/chartAccountsIcon.aeba4763829d93cab322f702239b7183.svg",
-    },
-  ];
-
   return (
     <>
-      <div className="w-full">
+      <div className="w-full mt-4">
         <div className="w-full shadow-xl bg-white/90 backdrop-blur-sm border-0 rounded-xl">
           <div className="space-y-1 text-center p-6">
             <h2 className="text-2xl font-bold">Welcome</h2>

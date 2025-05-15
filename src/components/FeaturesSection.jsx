@@ -1,4 +1,5 @@
-import { ChevronRight, Check, ArrowRight } from "lucide-react"
+import {  Check, ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom";
 import RevealOnScroll from "./ui/RevealOnScroll"
 import GradientText from "./ui/GradientText"
 import FloatingElement from "./ui/FloatingElement"
@@ -96,9 +97,9 @@ function FeaturesSection() {
       delay: 500,
     }
   ];
-  
-  
-  
+
+
+
 
   return (
     <section id="features-section" className="relative py-12 overflow-hidden">
@@ -211,10 +212,13 @@ function FeaturesSection() {
                   <p className="text-lg text-slate-400">Discover how <strong>Workwise</strong>  can transform your team's productivity</p>
                 </div>
 
-                <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-blue-hosta text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
-                  Get Started Now
-                  <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
+                <Link to="/register">
+                  <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-blue-hosta text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                    Get Started Now
+                    <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  </button>
+                </Link>
+
               </div>
             </div>
           </div>

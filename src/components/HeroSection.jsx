@@ -22,10 +22,13 @@ function HeroSection() {
       className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-slate-50 to-slate-100 overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-blue-hosta blur-3xl opacity-30"></div>
-        <div className="absolute bottom-20 left-20 w-72 h-72 rounded-full bg-vivid-cerise blur-3xl opacity-20"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-bright-sun blur-3xl opacity-20"></div>
-      </div>
+  <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-blue-hosta blur-3xl opacity-30 animate-drift1"></div>
+  <div className="absolute bottom-20 left-20 w-72 h-72 rounded-full bg-vivid-cerise blur-3xl opacity-20 animate-drift2"></div>
+  <div className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-bright-sun blur-3xl opacity-20 animate-drift3"></div>
+</div>
+    
+
+
 
       <div className="container px-4 md:px-14 sm:space-y-3 flex flex-col lg:flex-row items-center justify-around z-10">
         <div
@@ -54,22 +57,21 @@ function HeroSection() {
             </div>
 
             <div
-              className={`flex flex-col lg:flex-row items-start lg:items-center justify-between w-full mt-8 mb-4 max-w-[800px] transition-all duration-700 ${
-                isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
+              className={`flex flex-col lg:flex-row items-start lg:items-center justify-between w-full mt-4 mb-4 max-w-[800px] transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
               style={{ transitionDelay: "500ms" }}
             >
-              
+
               <div className="flex flex-col lg:text-left w-full lg:w-auto mb-1">
                 <p className="text-base text-slate-600 mb-1">
-                  Work from home the way it should be
+                  Your Business Operating System
                 </p>
                 <p className="text-base font-semibold text-slate-600">
                   Easy • Effective • Efficient
                 </p>
               </div>
 
-              
+
               {/* <div className="w-full lg:w-auto flex justify-center self-center lg:justify-end mb-2 mt-3 lg:mt-0">
                 <button className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-medium-turquoise text-white font-medium transition-all duration-200">
                   Get Started <ChevronRight className="ml-2 h-4 w-4" />
@@ -78,7 +80,7 @@ function HeroSection() {
             </div>
 
 
-            <div className="w-full lg:w-auto flex justify-center lg:justify-start mb-2 ">
+            <div className="w-full lg:w-auto flex justify-center lg:justify-start  ">
               <button className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-medium-turquoise text-white font-medium transition-all duration-200">
                 Get Started <ChevronRight className="ml-2 h-4 w-4" />
               </button>

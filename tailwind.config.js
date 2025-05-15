@@ -8,6 +8,11 @@ module.exports = {
     "app/**/*.{ts,tsx}",
     "components/**/*.{ts,tsx}",
   ],
+  safelist: [
+    'animate-blob1',
+    'animate-blob2',
+    'animate-blob3',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -58,6 +63,29 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        blob1: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '25%': { transform: 'translate(10px, -15px) scale(1.05)' },
+          '50%': { transform: 'translate(-10px, 10px) scale(0.98)' },
+          '75%': { transform: 'translate(5px, -10px) scale(1.02)' },
+        },
+        blob2: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '25%': { transform: 'translate(-10px, 20px) scale(1.03)' },
+          '50%': { transform: 'translate(10px, -10px) scale(0.97)' },
+          '75%': { transform: 'translate(-5px, 15px) scale(1.01)' },
+        },
+        blob3: {
+          '0%, 100%': { transform: 'translate(-50%, -50%) rotate(0deg)' },
+          '50%': { transform: 'translate(-50%, -52%) rotate(2deg)' },
+        },
+      },
+      animation: {
+        blob1: 'blob1 18s ease-in-out infinite',
+        blob2: 'blob2 22s ease-in-out infinite',
+        blob3: 'blob3 30s ease-in-out infinite',
       },
     },
   },
