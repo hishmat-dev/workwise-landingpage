@@ -98,9 +98,6 @@ function FeaturesSection() {
     }
   ];
 
-
-
-
   return (
     <section id="features-section" className="relative py-12 overflow-hidden">
       {/* Background elements */}
