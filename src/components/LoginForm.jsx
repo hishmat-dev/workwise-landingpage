@@ -25,10 +25,10 @@ function LoginForm() {
   return (
     <>
       <div className="w-full mt-4">
-        <div className="w-full shadow-xl bg-white/90 backdrop-blur-sm border-0 rounded-xl">
+        <div className="w-full shadow-xl bg-gray-700 border-2 backdrop-blur-sm  rounded-xl">
           <div className="space-y-1 text-center p-6">
-            <h2 className="text-2xl text-gray-800 font-bold">Welcome</h2>
-            <p className="text-sm text-slate-500">Enter your login credentials to continue</p>
+            <h2 className="text-2xl text-gray-300 font-bold">Welcome</h2>
+            <p className="text-sm text-slate-400">Enter your login credentials to continue</p>
           </div>
           <div className="p-6">
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -71,10 +71,10 @@ function LoginForm() {
 
             </form>
             <div className="mt-4 flex flex-row justify-between text-sm">
-              <Link to="/register" className="text-blue-hosta text-[16px] hover:text-btn-color hover:cursor-pointer">
+              <Link to="/register" className="text-blue-hosta text-[16px] hover:text-gray-200 hover:cursor-pointer">
                 Register
               </Link>
-              <Link to="/forgot-password" className="text-blue-hosta text-[16px] hover:text-btn-color hover:cursor-pointer">
+              <Link to="/forgot-password" className="text-blue-hosta text-[16px] hover:text-gray-200 hover:cursor-pointer">
                 Forgot Password?
               </Link>
             </div>
@@ -82,7 +82,7 @@ function LoginForm() {
           </div>
         </div>
       </div>
-      <div className="mt-6 mb-6 p-2 flex flex-col shadow-xl bg-white/90 backdrop-blur-sm border-0 rounded-xl">
+      <div className="mt-6 mb-6 p-2 flex flex-col shadow-xl bg-gray-700 backdrop-blur-sm border-0 rounded-xl">
         <IconSlider />
       </div>
     </>

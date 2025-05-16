@@ -21,8 +21,8 @@ const IconSlider = () => {
   const duplicatedModules = Array.from({ length: renderCount }, (_, i) => modules[i % modules.length]);
 
   return (
-    <div className="relative overflow-hidden h-16 bg-white flex items-center justify-center group hover:cursor-pointer">
-      <div className="absolute inset-0 z-20 pointer-events-none before:absolute before:left-0 before:top-0 before:w-1/4 before:h-full before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:w-1/4 after:h-full after:bg-gradient-to-l after:from-white after:to-transparent" />
+    <div className="relative overflow-hidden h-16 flex items-center justify-center group hover:cursor-pointer">
+      <div className="absolute inset-0 z-20 pointer-events-none before:absolute before:left-0 before:top-0 before:w-1/4 before:h-full before:bg-gradient-to-r before:from-gray-700 before:to-transparent after:absolute after:right-0 after:top-0 after:w-1/4 after:h-full after:bg-gradient-to-l after:from-gray-700 after:to-transparent" />
 
       <div
         className="flex animate-scroll group-hover:[animation-play-state:paused]"
