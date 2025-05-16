@@ -27,7 +27,7 @@ function LoginForm() {
       <div className="w-full mt-4">
         <div className="w-full shadow-xl bg-white/90 backdrop-blur-sm border-0 rounded-xl">
           <div className="space-y-1 text-center p-6">
-            <h2 className="text-2xl font-bold">Welcome</h2>
+            <h2 className="text-2xl text-gray-800 font-bold">Welcome</h2>
             <p className="text-sm text-slate-500">Enter your login credentials to continue</p>
           </div>
           <div className="p-6">
