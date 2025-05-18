@@ -71,7 +71,7 @@ function AuroraBackground({ children }) {
       }}
       className="relative min-h-screen overflow-hidden bg-gray-950 px-4 py- text-gray-200"
     >
-      {/* Content container */}
+      {/* Content landing-container */}
       <div className="relative z-10">{children}</div>
 
       {/* Stars background */}

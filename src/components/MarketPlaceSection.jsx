@@ -42,7 +42,7 @@ function MarketPlaceSection() {
       overlay="bg-gradient-to-br from-slate-900/90 to-slate-900/70"
       className="py-12"
     >
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="landing-container px-4 md:px-6 mx-auto">
         
         <FloatingElement
           className="absolute top-40 left-20 w-32 h-32 rounded-full border-4 border-vivid-cerise/10"

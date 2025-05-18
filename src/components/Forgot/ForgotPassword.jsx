@@ -22,7 +22,7 @@ function ForgotPassword() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-bright-sun blur-3xl opacity-20"></div>
       </div>
 
-      <div className="container px-4 md:px-14 sm:space-y-3 flex flex-col lg:flex-row items-center justify-around z-10">
+      <div className="landing-container px-4 md:px-14 sm:space-y-3 flex flex-col lg:flex-row items-center justify-around z-10">
         <div
           className={`flex-1 space-y-8 text-center lg:text-left transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           style={{ transitionDelay: "100ms" }}

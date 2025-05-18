@@ -119,7 +119,7 @@ function FeaturesSection() {
         </svg>
       </div>
 
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="landing-container px-4 md:px-6 mx-auto">
         <div className="text-center mb-8">
           {/* <RevealOnScroll animation="fade-down" delay={100}>
             <span className="inline-block px-4 py-1 rounded-full bg-blue-hosta/10 text-blue-hosta text-sm font-medium mb-4">

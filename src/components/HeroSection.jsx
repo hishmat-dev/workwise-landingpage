@@ -34,7 +34,7 @@ function HeroSection() {
     <AuroraBackground>
       <div
         ref={heroRef}
-        className="container mx-auto flex flex-col lg:flex-row items-center justify-around min-h-screen"
+        className="landing-container mx-auto flex flex-col lg:flex-row items-center justify-around min-h-screen"
       >
         <div
           className={`flex-1 space-y-8 text-center lg:text-left transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}

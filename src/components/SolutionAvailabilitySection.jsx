@@ -59,7 +59,7 @@ function SolutionAvailabilitySection() {
         }}
       ></div>
 
-      <div className="container px-4 md:px-6 mx-auto relative">
+      <div className="landing-container px-4 md:px-6 mx-auto relative">
         {/* Floating elements */}
         <FloatingElement
           className="absolute top-20 left-20 w-16 h-16 bg-blue-hosta/20 rounded-full blur-xl"

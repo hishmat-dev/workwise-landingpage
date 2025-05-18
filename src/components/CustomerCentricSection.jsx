@@ -48,7 +48,7 @@ function CustomerCentricSection() {
         }}
       ></div>
 
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="landing-container px-4 md:px-6 mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
           <div className="lg:w-1/2">

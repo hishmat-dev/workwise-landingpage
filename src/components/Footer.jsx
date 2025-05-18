@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <footer className="pb-6 bg-gray-700 text-slate-300">
-      <div className="container px-1 md:px-2 mx-auto">
+      <div className="landing-container px-1 md:px-2 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end ">
 
           <RevealOnScroll animation="fade-right" delay={100}>

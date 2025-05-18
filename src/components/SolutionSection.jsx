@@ -32,7 +32,7 @@ function SolutionSection() {
         }}
       ></div>
 
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="landing-container px-4 md:px-6 mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-10">
           {/* Left side - Content */}
           <div className="lg:w-1/2">
@@ -82,7 +82,7 @@ function SolutionSection() {
                 {/* Glow effect */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-hosta/30 to-bright-sun/30 rounded-2xl blur-xl"></div>
 
-                {/* Dashboard container */}
+                {/* Dashboard landing-container */}
                 <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 transform perspective-1000 hover:rotate-y-3 hover:rotate-x-3 transition-transform duration-500">
                   {/* Dashboard header */}
                   <div className="bg-slate-800 p-4 flex items-center justify-between">

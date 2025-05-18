@@ -86,7 +86,7 @@ function ToolsSection() {
         />
       ))}
 
-      <div className="container px-4 md:px-6 mx-auto relative">
+      <div className="landing-container px-4 md:px-6 mx-auto relative">
         <div className="text-center mb-16">
           <RevealOnScroll animation="fade-down" delay={100}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-vivid-cerise/20 text-sm font-medium text-vivid-cerise mb-4">

@@ -16,7 +16,7 @@ function DifferenceSection() {
 
   return (
     <ParallaxSection bgColor="bg-gradient-to-br from-waikawa-grey/10 via-white to-vivid-cerise/10" className="py-12">
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="landing-container px-4 md:px-6 mx-auto">
         <div className="text-center mb-16">
           <RevealOnScroll animation="fade-down" delay={100}>
             <span className="inline-block px-4 py-1 rounded-full bg-waikawa-grey/10 text-waikawa-grey text-sm font-medium mb-4">

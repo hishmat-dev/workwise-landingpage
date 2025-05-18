@@ -12,7 +12,7 @@ function CTASection() {
       ref={ctaRef}
       className="py-12 bg-gradient-to-b from-white to-slate-100 overflow-hidden"
     >
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="landing-container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
   
           <div

@@ -63,7 +63,7 @@ function StatsSection() {
         </div>
       </div>
 
-      <div className="container px-4 md:px-6 mx-auto mb-2 relative">
+      <div className="landing-container px-4 md:px-6 mx-auto mb-2 relative">
         <div className="text-center mb-8">
           <RevealOnScroll animation="fade-down" delay={100}>
             <span className="inline-block px-4 py-1 rounded-full bg-white/10 text-white text-sm font-medium mb-4">
