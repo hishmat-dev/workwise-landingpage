@@ -25,7 +25,7 @@ const IconSlider = () => {
       <div className="absolute inset-0 z-20 pointer-events-none before:absolute before:left-0 before:top-0 before:w-1/4 before:h-full before:bg-gradient-to-r before:from-gray-700 before:to-transparent after:absolute after:right-0 after:top-0 after:w-1/4 after:h-full after:bg-gradient-to-l after:from-gray-700 after:to-transparent" />
 
       <div
-        className="flex animate-scroll group-hover:[animation-play-state:paused]"
+        className="flex icon-animate-scroll group-hover:[animation-play-state:paused]"
         style={{ width: 'max-content' }}
       >
         {duplicatedModules.map((module, index) => (

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 
 function AnimatedCounter({ end, duration = 2000, prefix = "", suffix = "", decimals = 0 }) {
   const [count, setCount] = useState(0)
@@ -6,33 +6,8 @@ function AnimatedCounter({ end, duration = 2000, prefix = "", suffix = "", decim
   const startTimeRef = useRef(null)
   const frameRef = useRef(null)
 
-  useEffect(() => {
-    // Only start animation when element is in viewport
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          startAnimation()
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.1 },
-    )
-
-    if (countRef.current) {
-      observer.observe(countRef.current)
-    }
-
-    return () => {
-      if (countRef.current) {
-        observer.disconnect()
-      }
-      if (frameRef.current) {
-        cancelAnimationFrame(frameRef.current)
-      }
-    }
-  }, [end])
-
-  const startAnimation = () => {
+  // Memoized startAnimation to prevent missing dependency warnings
+  const startAnimation = useCallback(() => {
     const animate = (timestamp) => {
       if (!startTimeRef.current) startTimeRef.current = timestamp
       const progress = timestamp - startTimeRef.current
@@ -50,7 +25,34 @@ function AnimatedCounter({ end, duration = 2000, prefix = "", suffix = "", decim
     }
 
     frameRef.current = requestAnimationFrame(animate)
-  }
+  }, [end, duration])
+
+  useEffect(() => {
+    const node = countRef.current // capture ref at effect run time
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          startAnimation()
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    if (node) {
+      observer.observe(node)
+    }
+
+    return () => {
+      if (node) {
+        observer.disconnect()
+      }
+      if (frameRef.current) {
+        cancelAnimationFrame(frameRef.current)
+      }
+    }
+  }, [startAnimation])
 
   const formattedCount = count.toFixed(decimals)
 

@@ -17,7 +17,7 @@ function ParallaxSection({
       if (!sectionRef.current) return
 
       const { top } = sectionRef.current.getBoundingClientRect()
-      const scrollPosition = window.scrollY
+      // const scrollPosition = window.scrollY
       const windowHeight = window.innerHeight
 
       // Calculate how far the section is from the viewport center

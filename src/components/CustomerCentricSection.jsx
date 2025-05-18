@@ -1,4 +1,4 @@
-import { Users, BarChart2, MessageSquare, Heart, User, UserPlus, Activity } from "lucide-react"
+import { Users, BarChart2, MessageSquare, Heart } from "lucide-react"
 import RevealOnScroll from "./ui/RevealOnScroll"
 import GradientText from "./ui/GradientText"
 import FloatingElement from "./ui/FloatingElement"

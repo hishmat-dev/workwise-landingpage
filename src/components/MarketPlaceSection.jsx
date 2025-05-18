@@ -1,4 +1,4 @@
-import { ShoppingCart, Globe, Clock, Shield, ArrowRight } from "lucide-react"
+import { ShoppingCart, Globe, Clock, Shield } from "lucide-react"
 import RevealOnScroll from "./ui/RevealOnScroll"
 import GradientText from "./ui/GradientText"
 import ParallaxSection from "./ui/ParallaxSection"
