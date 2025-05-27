@@ -8,9 +8,6 @@ function LoginForm() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
- 
-
-
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword)
   }
@@ -39,7 +36,7 @@ function LoginForm() {
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="h-12 rounded-lg w-full pl-10 pr-3 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
+                  className="h-12 rounded-lg w-full pl-10 pr-3 py-2 text-gray-700 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
                   required
                 />
               </div>
@@ -50,7 +47,7 @@ function LoginForm() {
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="h-12 rounded-lg w-full pl-10 pr-10 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
+                  className="h-12 rounded-lg w-full pl-10 pr-10 py-2 text-gray-700 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
                   required
                 />
                 <button
@@ -71,7 +68,7 @@ function LoginForm() {
 
             </form>
             <div className="mt-4 flex flex-row justify-between text-sm">
-              <Link to="/register" className="text-blue-hosta text-[16px] hover:text-gray-200 hover:cursor-pointer">
+              <Link to="/thankyou" className="text-blue-hosta text-[16px] hover:text-gray-200 hover:cursor-pointer">
                 Register
               </Link>
               <Link to="/forgot-password" className="text-blue-hosta text-[16px] hover:text-gray-200 hover:cursor-pointer">

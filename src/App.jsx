@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 
 import LoadingComponent from './components/ui/LoadingComponent.jsx'; 
+import ToogleThankyou from './components/ToogleThankyou/ToogleThankyou.jsx';
 
 const Landing = lazy(() => import('./Landing.jsx'));
 const ForgotPassword = lazy(() => import('./components/Forgot/ForgotPassword.jsx'));
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/thankyou" element={<ToogleThankyou/>} />
         </Routes>
       </Suspense>
     </BrowserRouter>

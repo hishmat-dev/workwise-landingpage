@@ -41,7 +41,7 @@ function StarScene() {
 
   return (
     <>
-      <Stars radius={75} count={2500} factor={4} fade speed={2} />
+      <Stars count={2500} factor={4} fade speed={2} />
       {bigStars.map((star, i) => (
         <BigStar key={i} {...star} />
       ))}
