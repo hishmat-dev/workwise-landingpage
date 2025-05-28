@@ -24,43 +24,34 @@ function ToogleThankyou() {
 
     const message =
         "Thank you for your registration and confirmation of email. You are now in the queue to get access to Workwise. We apologise that due to the high demand you may experience some delay before access is granted.";
+
     return (
         <AuroraBackground>
-            <div
-                ref={heroRef}
-                className="landing-container mx-auto flex flex-col items-center justify-center min-h-screen"
-            >
-                <div
-                    className={`flex-1 flex flex-col justify-center items-center text-center lg:text-left transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                        }`}
-                    style={{ transitionDelay: "100ms" }}
-                >
-                    <div className="space-y-2 flex flex-col items-center lg:items-start">
-                        <div
-                            className={`flex items-center justify-center lg:justify-start mt-2  transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                                }`}
-                            style={{ transitionDelay: "300ms" }}
-                        >
-                            <img src={logo} alt="WORKWISE Logo" className="h-72 w-auto" />
-                        </div>
-                    </div>
-
+            <div className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 md:px-8">
+                <div className="absolute top-2 sm:top-4 left-2 sm:left-4 z-10">
+                    <img
+                        src={logo}
+                        alt="WORKWISE Logo"
+                        className="h-20 sm:h-24 md:h-28 lg:h-36 w-auto"
+                    />
                 </div>
 
                 <div
-                    className={`flex-1 w-full flex items-center justify-center transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+                    ref={heroRef}
+                    className={`flex items-center justify-center w-full transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                         }`}
-                    style={{ transitionDelay: "300ms" }}
+                    style={{ transitionDelay: "100ms" }}
                 >
                     <Message message={message} />
                 </div>
 
-                <footer className="w-full py-4 text-center text-white bg-opacity-50">
-                    <p className="text-xl font-semibold">
-                        Copyrights &copy;Workwise 2016-{new Date().getFullYear()} All rights reserved. Workwise
+                <footer className="absolute bottom-2 w-full text-center text-white px-2 sm:px-4">
+                    <p className="text-xs sm:text-sm md:text-base font-medium">
+                        Copyrights ©Workwise 2016-{new Date().getFullYear()} All rights reserved
                     </p>
                 </footer>
             </div>
+
         </AuroraBackground>
     );
 }

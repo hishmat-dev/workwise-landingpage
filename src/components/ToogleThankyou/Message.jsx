@@ -1,21 +1,19 @@
-import { Link } from 'react-router-dom';
 function Message({ message }) {
     return (
-        <div className="text-center p-8 bg-waikawa-grey bg-opacity-50 rounded-xl shadow-xl  w-4/5">
-            <img
-                src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
-                alt="Thank You"
-                className="w-24 h-24 mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-bright-sun mb-4">Thank You</h3>
-            <p className="leading-relaxed">
+        <div className="text-center p-4 sm:p-6 md:p-8 bg-waikawa-grey bg-opacity-50 rounded-xl shadow-xl w-full max-w-4xl mx-auto">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-6 sm:mb-8">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
+                    alt="Thank You"
+                    className="w-12 h-12 sm:w-20 sm:h-20 md:w-28 md:h-28"
+                />
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-bright-sun">
+                    Thank You!
+                </h3>
+            </div>
+            <p className="text-base sm:text-sm md:text-lg leading-relaxed text-white">
                 {message || "Explore our features and start your journey with us today."}
             </p>
-            <div className="hover:scale-105 transition-transform duration-300">
-                <Link to='/' className="px-8 py-3 bg-gradient-to-r from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-blue-hosta text-white rounded-full font-medium transition-colors duration-200">
-                    Go to Log In
-                </Link>
-            </div>
         </div>
     );
 }
