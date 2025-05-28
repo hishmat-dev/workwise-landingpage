@@ -32,7 +32,7 @@ function ToogleThankyou() {
                     <img
                         src={logo}
                         alt="WORKWISE Logo"
-                        className="h-20 sm:h-24 md:h-28 lg:h-36 w-auto"
+                        className="h-32 sm:h-32 md:h-36 lg:h-40 w-auto"
                     />
                 </div>
 

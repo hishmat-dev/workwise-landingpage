@@ -5,7 +5,7 @@ function Message({ message }) {
                 <img
                     src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
                     alt="Thank You"
-                    className="w-12 h-12 sm:w-20 sm:h-20 md:w-28 md:h-28"
+                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
                 />
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-bright-sun">
                     Thank You!
